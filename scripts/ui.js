@@ -37,6 +37,23 @@ export const onShowProSuccess = (pro) => {
         <p>PDGA Number: #${pro.pdgaNumber}</p>
         <p>Sponser: ${pro.sponser}</p>
         <p>${pro._id}</p>
+
+        <form data-id="${pro._id}">
+        <input type="text" name="firstName" value="${pro.firstName}">
+        <input type="text" name="lastName" value="${pro.lastName}">
+        <input type="number" name="pdgaNumber" value="${pro.pdgaNumber}">
+        <input type="text" name="sponser" value="${pro.sponser}">
+        <input type="submit" value="Update Pro">
+      </form>
+      <button data-id="${pro._id}">Delete Pro</button>
     `;
   showProContainer.appendChild(div);
+};
+
+export const onUpdateProSuccess = () => {
+  messageContainer.innerText = 'Update was successful :)';
+};
+
+export const onDeleteProSuccess = () => {
+  messageContainer.innerText = 'Delete was successful';
 };
