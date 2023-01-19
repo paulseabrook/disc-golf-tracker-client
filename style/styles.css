@@ -14,10 +14,32 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 75vh;
+  width: 100vh;
   background-color: rgba(134, 134, 207, 0.409);
   padding: 15px;
   border-radius: 10px;
+}
+#show-pro-container {
+  margin: 10px;
+}
+
+.player-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player-form > * {
+  margin: 2px;
+  border-radius: 5px;
 }
 
 #index-pro-container {
@@ -27,6 +49,9 @@ body {
 
 #create-pro-form > ::placeholder {
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #create-pro-form > input {

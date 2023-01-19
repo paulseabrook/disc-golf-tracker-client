@@ -32,19 +32,20 @@ export const onShowProSuccess = (pro) => {
     }
   }
   const div = document.createElement('div');
+  div.classList.add('player-div');
   div.innerHTML = `
         <h3>${pro.firstName} ${pro.lastName}</h3>
         <p>PDGA Number: #${pro.pdgaNumber}</p>
         <p>Sponser: ${pro.sponser}</p>
         <p>${pro._id}</p>
 
-        <form data-id="${pro._id}">
-        <input type="text" name="firstName" value="${pro.firstName}">
-        <input type="text" name="lastName" value="${pro.lastName}">
-        <input type="number" name="pdgaNumber" value="${pro.pdgaNumber}">
-        <input type="text" name="sponser" value="${pro.sponser}">
-        <input type="submit" value="Update Pro">
-      </form>
+        <form data-id="${pro._id}" class="player-form">
+          <input type="text" name="firstName" value="${pro.firstName}">
+          <input type="text" name="lastName" value="${pro.lastName}">
+          <input type="number" name="pdgaNumber" value="${pro.pdgaNumber}">
+          <input type="text" name="sponser" value="${pro.sponser}">
+          <input type="submit" value="Update Pro">
+        </form>
       <button data-id="${pro._id}">Delete Pro</button>
     `;
   showProContainer.appendChild(div);
