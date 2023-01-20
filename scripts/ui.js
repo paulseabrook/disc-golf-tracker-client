@@ -44,9 +44,9 @@ export const onShowProSuccess = (pro) => {
           <input type="text" name="lastName" value="${pro.lastName}">
           <input type="number" name="pdgaNumber" value="${pro.pdgaNumber}">
           <input type="text" name="sponser" value="${pro.sponser}">
-          <input type="submit" value="Update Pro">
+          <input type="submit" value="Update Pro" class="update-button">
         </form>
-      <button data-id="${pro._id}">Delete Pro</button>
+      <button data-id="${pro._id}" class="delete-button">Delete Pro</button>
     `;
   showProContainer.appendChild(div);
 };

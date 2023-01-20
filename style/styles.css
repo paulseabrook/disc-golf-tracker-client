@@ -12,12 +12,13 @@ body {
 }
 #pro-display {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100vh;
   background-color: rgba(134, 134, 207, 0.409);
   padding: 15px;
   border-radius: 10px;
+  outline: solid white 5px;
 }
 #show-pro-container {
   margin: 10px;
@@ -58,10 +59,26 @@ body {
   background-color: rgb(108, 108, 207);
   color: white;
   border-radius: 5px;
+  width: 10 vh;
+  height: 3vh;
+  outline: solid white 5px;
 }
 
 button {
   background-color: rgb(108, 108, 207);
   color: white;
   border-radius: 5px;
+}
+
+.delete-button {
+  background-color: rgb(211, 38, 38);
+  outline: white solid 2px;
+  margin-top: 5px;
+}
+
+.update-button {
+  background-color: rgb(63, 116, 20);
+  color: white;
+  outline: white solid 2px;
+  margin-top: 5px;
 }
